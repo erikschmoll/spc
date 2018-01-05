@@ -1,0 +1,24 @@
+{
+  "name": "spc",
+  "version": "1.0.0",
+  "description": "SPC is a api restful. It is builded with node js, restify, OAuth(JWT) and mongoDB.",
+  "main": "index.js",
+  "dependencies": {
+    "@types/restify": "^5.0.7",
+    "restify": "^6.3.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erikschmoll/spc.git"
+  },
+  "author": "eschmoll",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erikschmoll/spc/issues"
+  },
+  "homepage": "https://github.com/erikschmoll/spc#readme"
+}
