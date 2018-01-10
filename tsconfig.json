@@ -5,14 +5,14 @@
         "noImplicitAny": true,
         "moduleResolution": "node",
         "sourceMap": true,
-        "outDir": "dist",
-        "baseUrl": "."
+        "outDir": "dist"
     },
     "include": [
-        "config/*.ts"
+        "config/*.ts",
+        "app/**/*.ts"
     ],
     "exclude": [
-        "node_modules/**/*.js"
+        "node_modules"
     ]
 
 }

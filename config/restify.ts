@@ -28,9 +28,10 @@ fs.readdir(pathToRoutes, (err: any, files: string[])=>{
         throw new Error(err);
     }
     else{
+        files = files.filter(f => /\.*\.js$/i.test(f))
         files.filter((file: string)=>{
-            const route = require(path.join(pathToRoutes, file))
-            route.default(app)
+                const route = require(path.join(pathToRoutes, file))
+                route.default(app)
         })
     }
 })
