@@ -8,6 +8,7 @@ interface IprojectController{
 class projectController implements IprojectController{
     get = (req: restify.Request, res: restify.Response, next: restify.Next) =>{
         res.json(200,{name: 'my project'})
+        return next();
     }
 }
 

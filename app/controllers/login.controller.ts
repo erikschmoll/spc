@@ -9,7 +9,8 @@ class LoginController implements ILoginController{
     token = (req: restify.Request, res: restify.Response, next: restify.Next):any =>{
         var instance = new ADService();
         return instance.authenticate(req.body.user, req.body.password, (data: any)=>{
-            return res.json(data.code, data.value);
+            res.json(data.code, data.value);
+            return next();
         });
     }
 }
