@@ -10,7 +10,8 @@ interface ConfigSettings{
     env: string
     connectionString: string
     debug: boolean
-    routePrefix: string
+    routePrefix: string,
+    ad: any;
 }
 
 const env: string = process.env.NODE_ENV || 'dev'
@@ -24,7 +25,11 @@ const config: ConfigSettings = {
     env: env,
     connectionString: "mongodb+srv://spc:sofrecom10!@cluster0-uyim5.mongodb.net/dev",
     debug: debug,
-    routePrefix: 'api' + "/" + version
+    routePrefix: 'api' + "/" + version,
+    ad:{
+        ldap: "LDAP://sofrecom.local",
+        baseDN: "dc=domain,dc=com"
+    }
 }
 if(env === 'test'){
     config.connectionString = "mongodb+srv://spc:sofrecom10!@cluster0-uyim5.mongodb.net/test"

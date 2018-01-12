@@ -2,6 +2,7 @@ import { config } from './config/env'
 import { app } from './config/restify'
 import { MongoClient } from 'mongodb'
 import * as assert from 'assert'
+import { LoginController } from './app/controllers/login.controller'
 
 
 //connect to mongodb
@@ -12,6 +13,8 @@ MongoClient.connect(config.connectionString, function(err, db) {
     console.log(`${config.name} is running at ${app.url}`)
   })
   db.close();
+//  var login = new LoginController();
+//  var token = login.token("SOFRECOM\\eschmoll", "Personal2")
 });
 
 

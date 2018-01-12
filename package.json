@@ -4,6 +4,7 @@
   "description": "SPC is a api restful. It is builded with node js, restify, OAuth(JWT) and mongoDB.",
   "main": "index.js",
   "dependencies": {
+    "activedirectory": "^0.7.2",
     "assert": "^1.4.1",
     "mongo": "^0.1.0",
     "restify": "^6.3.4",
