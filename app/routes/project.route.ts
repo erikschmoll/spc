@@ -4,6 +4,6 @@ import {projectController, IprojectController} from '../controllers/project.cont
 
 
 export default (api: restify.Server) =>{
-    let projCtrl: IprojectController = new projectController();
+    let projCtrl: IprojectController = new projectController()
     api.get(config.routePrefix + '/project', projCtrl.get)
 }

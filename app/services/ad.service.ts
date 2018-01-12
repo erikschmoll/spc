@@ -18,16 +18,16 @@ class ADService implements IConnect{
         ad.authenticate(user, password, (err: any, auth: any)=>{
             var result: any;
             if (err) {
-                result = { code: 400, data: err };
+                result = { code: 400, value: err };
               }
               
               if (auth) {
-                result = { code: 200, data: { hallo: "hi " + user } };
+                result = { code: 200, value: { hello: "hi " + user } };
               }
               else {
-                result = { code: 400, data: {error: 'user_invalid' } };
+                result = { code: 400, value: {error: 'user_invalid' } };
               }
-              return result;
+              cb(result);
         });
     }
 
