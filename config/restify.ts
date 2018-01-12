@@ -4,6 +4,8 @@ import * as restify from 'restify'
 import { config } from './env'
 import * as assert from 'assert'
 
+var jwt = require('restify-jwt');
+
 // get path to routes handlers
 const pathToRoutes: string = path.join(config.root, '/app/routes')
 
@@ -14,14 +16,12 @@ app.use(restify.plugins.bodyParser());
 
 //user-defined middleware
 app.use((req: restify.Request, res: restify.Response, next: restify.Next)=>{
-
     res.setHeader('Access-Control-Allow-Origin', '*')
-    
     // disable caching so we'll always get the latest data
     res.setHeader('Cache-Control', 'no-cache');
-
     return next();
 })
+
 
 // add route handlers
 fs.readdir(pathToRoutes, (err: any, files: string[])=>{
@@ -32,5 +32,10 @@ fs.readdir(pathToRoutes, (err: any, files: string[])=>{
             route.default(app)
     })
 })
+
+app.use(jwt({ secret: config.auth.tokenSecret }).unless(
+    { path: [ '/' + config.routePrefix + '/token' ] }
+));
+
 
 export { app }

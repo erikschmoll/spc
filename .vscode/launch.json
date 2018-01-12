@@ -16,7 +16,8 @@
             "env":{
                 "NODE_ENV": "dev",
                 "DEBUG": "false",
-                "VERSION": "v1"
+                "VERSION": "v1",
+                "TOKEN_SECRET": "871238SDF87HU234"
             }
         }
     ]

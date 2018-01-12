@@ -10,13 +10,15 @@ interface ConfigSettings{
     env: string
     connectionString: string
     debug: boolean
-    routePrefix: string,
-    ad: any;
+    routePrefix: string
+    ad: any
+    auth: any
 }
 
 const env: string = process.env.NODE_ENV || 'dev'
 const debug: boolean = JSON.parse(process.env.DEBUG || 'false')
 const version: string = process.env.VERSION || 'v1'
+const tokenSecret: string = process.env.TOKEN_SECRET || '123'
 
 const config: ConfigSettings = {
     root: path.join(__dirname, '/..'),
@@ -29,6 +31,9 @@ const config: ConfigSettings = {
     ad:{
         ldap: "LDAP://sofrecom.local",
         baseDN: "dc=domain,dc=com"
+    },
+    auth: {
+        tokenSecret: tokenSecret 
     }
 }
 if(env === 'test'){
