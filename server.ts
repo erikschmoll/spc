@@ -1,20 +1,19 @@
 import { config } from './config/env'
 import { app } from './config/restify'
 import { MongoClient } from 'mongodb'
+import * as assert from 'assert'
 
 
 //connect to mongodb
-
-//var uri = "mongodb://spc:sofrecom10!@cluster0-shard-00-00-uyim5.mongodb.net:27017/dev";
-//var uri = "mongodb://spc:sofrecom10!@cluster0-shard-00-00-uyim5.mongodb.net:27017,cluster0-shard-00-01-uyim5.mongodb.net:27017,cluster0-shard-00-02-uyim5.mongodb.net:27017/dev?ssl=true";
-var uri = "mongodb+srv://spc:sofrecom10!@cluster0-uyim5.mongodb.net/test"
-
-MongoClient.connect(uri, function(err, db) {
+MongoClient.connect(config.connectionString, function(err, db) {
+  assert.equal(null, err)
+  console.log("Connected correctly to server");
+  app.listen(config.port,()=>{
+    console.log(`${config.name} is running at ${app.url}`)
+  })
   db.close();
 });
 
 
 
-app.listen(config.port,()=>{
-    console.log(`${config.name} is running at ${app.url}`)
-})
+

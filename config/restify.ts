@@ -2,6 +2,7 @@ import * as fs from 'fs'
 import * as path from 'path'
 import * as restify from 'restify'
 import { config } from './env'
+import * as assert from 'assert'
 
 // get path to routes handlers
 const pathToRoutes: string = path.join(config.root, '/app/routes')
@@ -24,16 +25,12 @@ app.use((req: restify.Request, res: restify.Response, next: restify.Next)=>{
 
 // add route handlers
 fs.readdir(pathToRoutes, (err: any, files: string[])=>{
-    if(err){
-        throw new Error(err);
-    }
-    else{
-        files = files.filter(f => /\.*\.js$/i.test(f))
-        files.filter((file: string)=>{
-                const route = require(path.join(pathToRoutes, file))
-                route.default(app)
-        })
-    }
+    assert.equal(null, err)
+    files = files.filter(f => /\.*\.js$/i.test(f))
+    files.filter((file: string)=>{
+            const route = require(path.join(pathToRoutes, file))
+            route.default(app)
+    })
 })
 
 export { app }
