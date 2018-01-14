@@ -4,7 +4,7 @@ import * as restify from 'restify'
 import { config } from './env'
 import * as assert from 'assert'
 
-var jwt = require('restify-jwt');
+//var jwt = require('restify-jwt');
 
 // get path to routes handlers
 const pathToRoutes: string = path.join(config.root, '/app/routes')
@@ -32,10 +32,10 @@ fs.readdir(pathToRoutes, (err: any, files: string[])=>{
             route.default(app)
     })
 })
-
+/*
 app.use(jwt({ secret: config.auth.tokenSecret }).unless(
     { path: [ '/' + config.routePrefix + '/token' ] }
-));
+));*/
 
 
 export { app }

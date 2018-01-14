@@ -1,10 +1,7 @@
 import { config } from '../../config/env'
+import { IConnect } from '../contracts/connect.interface'
 
-var ActiveDirectory = require('activedirectory');
-
-interface IConnect{
-    authenticate(user:string, password: string, cb: any):void;
-}
+var ActiveDirectory = require('activedirectory')
 
 class ADService implements IConnect{
     authenticate = (user:string, password: string, cb: any):void => {

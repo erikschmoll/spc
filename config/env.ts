@@ -33,7 +33,8 @@ const config: ConfigSettings = {
         baseDN: "dc=domain,dc=com"
     },
     auth: {
-        tokenSecret: tokenSecret 
+        tokenSecret: tokenSecret,
+        timeExp: '1h'
     }
 }
 if(env === 'test'){
