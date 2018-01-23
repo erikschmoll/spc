@@ -1,5 +1,5 @@
 import * as restify from 'restify'
-
+import { Project } from '../model/project'
 
 interface IprojectController{
     get(req: restify.Request, res: restify.Response, next: restify.Next): any;
@@ -7,7 +7,7 @@ interface IprojectController{
 
 class projectController implements IprojectController{
     get = (req: restify.Request, res: restify.Response, next: restify.Next) =>{
-        res.json(200,{name: 'my project'})
+        res.json(200, new Project('my porject'))
         return next();
     }
 }
