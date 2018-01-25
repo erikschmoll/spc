@@ -8,9 +8,12 @@ export class UserService implements IUserService {
     getUser=(req: Restify.Request):User=>{
         var token:string | string[] = req.headers.authorization;
         var decoded:any = Jwt.decode(token.toString(), {complete: true});
-        this.user.userName = decoded.user
-        this.user.role = decoded.role
+        this.user.userName = decoded.payload.data.user
+        this.user.role = decoded.payload.data.role
         return this.user
+    }
+    constructor(){
+        this.user = new User();
     }
 }
 
