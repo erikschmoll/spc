@@ -1,7 +1,14 @@
 
 node_modules
 dist
+.DS_Store
 SpcXamarin/.vs
 SpcXamarin/SpcAndroid/bin
 SpcXamarin/SpcAndroid/obj
 SpcXamarin/packages
+SpcXamarin/SpcCore/bin
+SpcXamarin/SpcCore/obj
+SpcXamarin/SpcModels/bin
+SpcXamarin/SpcModels/obj
+SpcXamarin/SpcServices/bin
+SpcXamarin/SpcServices/obj

@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{4E6CA1CE-8785-482F-9C09-537AFB8F9485}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="SpcModels/HttpResponse.cs" Line="15" Column="1" />
+      <File FileName="SpcCore/Values.cs" Line="13" Column="30" />
+      <File FileName="SpcServices/RestServices.cs" Line="11" Column="45" />
+      <File FileName="SpcCore/Interfaces/Services/IRestService.cs" Line="7" Column="30" />
+      <File FileName="SpcAndroid/MainActivity.cs" Line="13" Column="13" />
+      <File FileName="SpcAndroid/Activities/LoginActivity.cs" Line="23" Column="51" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.SpcAndroid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
