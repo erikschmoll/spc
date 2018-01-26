@@ -28,6 +28,8 @@ namespace SpcServices
             }
         }
 
+        //TODO: Ver https://channel9.msdn.com/Blogs/MVP-VisualStudio-Dev/Register-Access-Token-in-Xamarin-Forms
+
         /// <summary>
         /// Gets the async.
         /// </summary>
