@@ -4,7 +4,7 @@ using Android.OS;
 
 namespace SpcAndroid
 {
-    [Activity(Label = "SpcAndroid")]
+    [Activity(Label = "SPC")]
     public class MainActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)

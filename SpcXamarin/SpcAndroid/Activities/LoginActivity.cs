@@ -13,7 +13,7 @@ using Android.Widget;
 
 namespace SpcAndroid.Activities
 {
-    [Activity(Label = "SPC", Theme = "@style/android:Theme.Holo.Light.NoActionBar", MainLauncher = true)]
+    [Activity(Label = "SPC", Theme = "@style/android:Theme.Holo.Light.NoActionBar")]
     public class LoginActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)

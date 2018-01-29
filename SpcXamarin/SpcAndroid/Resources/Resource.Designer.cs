@@ -28,6 +28,25 @@ namespace SpcAndroid
 		{
 		}
 		
+		public partial class Animation
+		{
+			
+			// aapt resource value: 0x7f050000
+			public const int alpha = 2131034112;
+			
+			// aapt resource value: 0x7f050001
+			public const int translate = 2131034113;
+			
+			static Animation()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Animation()
+			{
+			}
+		}
+		
 		public partial class Attribute
 		{
 			
@@ -44,8 +63,8 @@ namespace SpcAndroid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f050000
-			public const int primary = 2131034112;
+			// aapt resource value: 0x7f060000
+			public const int primary = 2131099648;
 			
 			static Color()
 			{
@@ -76,14 +95,20 @@ namespace SpcAndroid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f070002
-			public const int login = 2131165186;
+			// aapt resource value: 0x7f080004
+			public const int imgSplash = 2131230724;
 			
-			// aapt resource value: 0x7f070001
-			public const int password = 2131165185;
+			// aapt resource value: 0x7f080003
+			public const int lnSplash = 2131230723;
 			
-			// aapt resource value: 0x7f070000
-			public const int userName = 2131165184;
+			// aapt resource value: 0x7f080002
+			public const int login = 2131230722;
+			
+			// aapt resource value: 0x7f080001
+			public const int password = 2131230721;
+			
+			// aapt resource value: 0x7f080000
+			public const int userName = 2131230720;
 			
 			static Id()
 			{
@@ -103,6 +128,9 @@ namespace SpcAndroid
 			
 			// aapt resource value: 0x7f040001
 			public const int Main = 2130968577;
+			
+			// aapt resource value: 0x7f040002
+			public const int Splash = 2130968578;
 			
 			static Layout()
 			{
@@ -133,8 +161,8 @@ namespace SpcAndroid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f060000
-			public const int app_name = 2131099648;
+			// aapt resource value: 0x7f070000
+			public const int app_name = 2131165184;
 			
 			static String()
 			{
