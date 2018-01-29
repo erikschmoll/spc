@@ -6,6 +6,7 @@
   "dependencies": {
     "activedirectory": "^0.7.2",
     "assert": "^1.4.1",
+    "edge": "^7.10.1",
     "jsonwebtoken": "^8.1.0",
     "mongo": "^0.1.0",
     "restify": "^6.3.4",
