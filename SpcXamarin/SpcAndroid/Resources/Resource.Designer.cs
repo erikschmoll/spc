@@ -35,7 +35,10 @@ namespace SpcAndroid
 			public const int alpha = 2131034112;
 			
 			// aapt resource value: 0x7f050001
-			public const int translate = 2131034113;
+			public const int slide_right = 2131034113;
+			
+			// aapt resource value: 0x7f050002
+			public const int translate = 2131034114;
 			
 			static Animation()
 			{
@@ -82,6 +85,9 @@ namespace SpcAndroid
 			// aapt resource value: 0x7f020000
 			public const int ic_launcher = 2130837504;
 			
+			// aapt resource value: 0x7f020001
+			public const int ProgressBarStyle = 2130837505;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -95,17 +101,20 @@ namespace SpcAndroid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f080004
-			public const int imgSplash = 2131230724;
+			// aapt resource value: 0x7f080005
+			public const int imgSplash = 2131230725;
 			
-			// aapt resource value: 0x7f080003
-			public const int lnSplash = 2131230723;
+			// aapt resource value: 0x7f080004
+			public const int lnSplash = 2131230724;
 			
 			// aapt resource value: 0x7f080002
 			public const int login = 2131230722;
 			
 			// aapt resource value: 0x7f080001
 			public const int password = 2131230721;
+			
+			// aapt resource value: 0x7f080003
+			public const int progressBar1 = 2131230723;
 			
 			// aapt resource value: 0x7f080000
 			public const int userName = 2131230720;

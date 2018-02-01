@@ -1,11 +1,12 @@
-﻿<Properties StartupConfiguration="{4E6CA1CE-8785-482F-9C09-537AFB8F9485}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="SpcAndroid/Activities/LoginActivity.cs">
+﻿<Properties StartupConfiguration="{4E6CA1CE-8785-482F-9C09-537AFB8F9485}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SpcAndroid/Resources/anim/slide_right.xml">
     <Files>
-      <File FileName="SpcModels/HttpResponse.cs" Line="15" Column="1" />
-      <File FileName="SpcCore/Values.cs" Line="13" Column="30" />
-      <File FileName="SpcServices/RestServices.cs" Line="26" Column="1" />
-      <File FileName="SpcAndroid/MainActivity.cs" Line="7" Column="35" />
-      <File FileName="SpcAndroid/Activities/LoginActivity.cs" Line="16" Column="106" />
+      <File FileName="SpcAndroid/MainActivity.cs" Line="7" Column="30" />
+      <File FileName="SpcAndroid/Activities/LoginActivity.cs" Line="63" Column="52" />
+      <File FileName="SpcCore/Values.cs" Line="13" Column="41" />
+      <File FileName="SpcModels/HttpResponse.cs" Line="6" Column="30" />
+      <File FileName="SpcAndroid/Resources/drawable/ProgressBarStyle.xml" Line="18" Column="1" />
+      <File FileName="SpcAndroid/Resources/anim/slide_right.xml" Line="2" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.SpcAndroid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_ARMv7a_Nougat" />

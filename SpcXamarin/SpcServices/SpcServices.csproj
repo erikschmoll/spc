@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SpcModels\SpcModels.csproj" />
     <ProjectReference Include="..\SpcCore\SpcCore.csproj" />
+    <ProjectReference Include="..\SpcModels\SpcModels.csproj" />
   </ItemGroup>
 </Project>
