@@ -8,10 +8,10 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}\\dist\\server.js",
+            "program": "${workspaceFolder}\\api\\dist\\server.js",
             //"preLaunchTask": "tsc: construir - tsconfig.json",
             "outFiles": [
-                "${workspaceFolder}/dist/**/*.js"
+                "${workspaceFolder}/api/dist/**/*.js"
             ],
             "env":{
                 "NODE_ENV": "dev",

@@ -1,4 +1,4 @@
 
-node_modules
-dist
-npm-debug.log
+api/node_modules
+api/dist
+api/npm-debug.log

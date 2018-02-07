@@ -6,7 +6,7 @@ import { LoginController } from './app/controllers/login.controller'
 
 
 //connect to mongodb
-MongoClient.connect(config.connectionString, function(err, db) {
+/*MongoClient.connect(config.connectionString, function(err, db) {
   assert.equal(null, err)
   console.log("Connected correctly to server");
   app.listen(config.port,()=>{
@@ -14,7 +14,9 @@ MongoClient.connect(config.connectionString, function(err, db) {
   })
   db.close();
 });
+*/
 
-
-
+app.listen(config.port,()=>{
+  console.log(`${config.name} is running at ${app.url}`)
+})
 
